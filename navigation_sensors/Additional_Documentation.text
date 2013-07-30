@@ -1,0 +1,18 @@
+## Navigation_sensors Program ##
+
+Allows the robot to move around a space while simultaneously avoiding obstacles 
+
+**Input**
+  : LaserScan messages received from Kinect connected to Turtlebot
+
+**Output**
+  : Twist messages with adjusted linear and angular velocities are published allowing the robot to move while avoiding obstacles 
+
+Features:
+ 1. Reads LaserScan messages and determines the location of obstacles closer than 0.7 m. 
+ 2. Determines appropriate course of action-whether to rotate or move forward-and then publishes the corresponding Twist messages. 
+
+
+Possible Bugs:
+ 1. In a narrow space, the robot may bump into the walls/obstacles but will continue moving forward 
+ 2. Bumper sensor does not work 
