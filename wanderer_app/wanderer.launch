@@ -1,0 +1,3 @@
+<launch>
+  <node name ="navigation_sensors" pkg="navigation_sensors" type="wanderer.py" cwd="node"/>
+</launch>
